@@ -1,0 +1,10 @@
+CREATE TABLE cs3620;
+USE cs3620;
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `Uuid` varchar(255) NOT NULL,
+  `Username` varchar(45) NOT NULL,
+  `Is_Admin` tinyint(1) DEFAULT '0',
+  `Is_Owner` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`Uuid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
